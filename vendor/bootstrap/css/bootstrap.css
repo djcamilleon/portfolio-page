@@ -1590,24 +1590,32 @@ pre code {
 .container2 {
   padding-right: 15px;
   padding-left: 15px;
-  width: 100vw;
-  background: green;
+  width: 99vw;
+  flex-wrap: wrap;
   /*margin-right: auto;
   margin-left: auto;*/
 }
 
 @media (min-width: 768px) {
-  .container {
+  .container,
+  .container2 {
     width: 750px;
   }
 }
+@media (min-width:1648px) {
+  topPortfolio {
+    flex-direction:column;
+  }
+}
 @media (min-width: 992px) {
-  .container {
+  .container,
+  .container2  {
     width: 970px;
   }
 }
 @media (min-width: 1200px) {
-  .container {
+  .container,
+  .container2  {
     width: 1170px;
   }
 }
